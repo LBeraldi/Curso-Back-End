@@ -1,10 +1,10 @@
-package org.example;
+package src.main.java.org.example;
 
 class Conta {
     int numero;
     double saldo;
     double limite;
-    Cliente titular = new Cliente();
+    String titular;
 
     boolean sacar(double valor){
         if (this.saldo < valor){
@@ -26,5 +26,17 @@ class Conta {
             destino.depositar(valor);
             return true;
         }
+    }
+
+    double calculaRendimento(){
+        this.saldo = this.saldo * 0.1;
+        return saldo;
+    }
+
+    public double recuperaDadosParaImpressao() {
+        System.out.println("Saldo de : " + saldo);
+        System.out.println("Rendimento de : " + calculaRendimento());
+        System.out.println(titular);
+        return saldo;
     }
 }

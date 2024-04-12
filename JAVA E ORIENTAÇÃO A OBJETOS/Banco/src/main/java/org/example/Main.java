@@ -1,18 +1,24 @@
-package org.example;
+package src.main.java.org.example;
+
 
 public class Main {
    public static void main(String[] args) {
 
-        System.out.println("Introdução a orientação a Objetos!");
-//        Conta suaConta = new Conta();
-        Conta minhaConta = new Conta();
+       Conta c1 = new Conta();
+       c1.titular = "Danilo";
+       c1.saldo = 100;
 
-        minhaConta.titular.nome = "Lucas";
+       Conta c2 = new Conta();
+       c2.titular = "Danilo";
+       c2.saldo = 100;
 
-        minhaConta.saldo = 1000;
-
-       System.out.println(minhaConta.titular);
-
+       c2 = c1;
+       
+       if (c1 == c2) {
+           System.out.println("iguais");
+       } else {
+           System.out.println("diferentes");
+       }
 
 
       /*  suaConta.saldo = 1000;

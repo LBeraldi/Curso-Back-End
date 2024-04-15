@@ -1,13 +1,43 @@
 package src.main.java.org.example;
 
-class Conta {
+ class Conta {
     int numero;
-    double saldo;
-    double limite;
-    String titular;
+    private double saldo;
+    private double limite;
+    private String titular;
+    private static int totalDeContas;
 
-    boolean sacar(double valor){
+    Conta(String titular){
+        this.titular = titular;
+    }
+
+    Conta(int numero, String titular ){
+        this(titular);
+        this.numero = numero;
+    }
+    Conta(){
+        Conta.totalDeContas = Conta.totalDeContas + 1;
+    }
+     public double getSaldo() {
+         return this.saldo;
+     }
+
+
+     public String getTitular() {
+         return titular;
+     }
+
+     public static int getTotalDeContas() {
+         return totalDeContas;
+     }
+
+     public void setTitular(String titular) {
+         this.titular = titular;
+     }
+
+     boolean sacar(double valor){
         if (this.saldo < valor){
+            System.out.println("Não é possível sacar um valor maior do que o saldo!");
             return false;
         }else{
             this.saldo -= valor;

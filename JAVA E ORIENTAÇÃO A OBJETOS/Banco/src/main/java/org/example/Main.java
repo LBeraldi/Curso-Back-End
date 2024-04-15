@@ -3,8 +3,13 @@ package src.main.java.org.example;
 
 public class Main {
    public static void main(String[] args) {
+       Conta minhaConta = new Conta();
+       minhaConta.depositar(1000);
+       minhaConta.sacar(5000);
 
-       Conta c1 = new Conta();
+       System.out.println(minhaConta.getSaldo());
+
+/*       Conta c1 = new Conta();
        c1.titular = "Danilo";
        c1.saldo = 100;
 
@@ -20,8 +25,10 @@ public class Main {
            System.out.println("diferentes");
        }
 
+       System.out.println(c1.calculaRendimento());
+       System.out.println(c1.recuperaDadosParaImpressao());*/
 
-      /*  suaConta.saldo = 1000;
+/*  suaConta.saldo = 1000;
        suaConta.titular = "Teste";
 
         minhaConta.saldo = 100;

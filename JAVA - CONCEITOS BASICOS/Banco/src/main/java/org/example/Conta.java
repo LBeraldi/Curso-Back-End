@@ -1,4 +1,4 @@
-package src.main.java.org.example;
+package org.example;
 
  class Conta {
     int numero;

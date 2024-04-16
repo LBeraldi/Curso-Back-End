@@ -1,7 +1,7 @@
 package org.example;
 
 public class Gerente extends Funcionario {
-    private int senha;
+    protected int senha;
     private int numeroDeFuncionariosGerenciados;
 
     public int getSenha() {
@@ -23,6 +23,6 @@ public class Gerente extends Funcionario {
     }
 
     public double getBonificacao(){
-        return super.getBonificacao() + 1000;
+        return this.salario * 1.4 + 1000;
     }
 }

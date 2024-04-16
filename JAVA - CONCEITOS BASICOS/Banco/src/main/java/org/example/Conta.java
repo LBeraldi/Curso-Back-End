@@ -1,8 +1,9 @@
 package org.example;
 
- class Conta {
+ abstract class Conta {
     int numero;
     private double saldo;
+    protected String tipo;
     private double limite;
     private String titular;
     private static int totalDeContas;
@@ -22,6 +23,7 @@ package org.example;
          return this.saldo;
      }
 
+     public abstract void getTipo(String tipo);
 
      public String getTitular() {
          return titular;

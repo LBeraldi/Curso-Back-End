@@ -1,6 +1,6 @@
 package org.example;
 
-public class Funcionario {
+public abstract class Funcionario {
     protected String nome;
     protected String cpf;
     protected double salario;
@@ -14,8 +14,6 @@ public class Funcionario {
     }
 
 //    @Override
-    public double getBonificacao() {
-        return this.salario * 0.10;
-    }
+    public abstract double getBonificacao() ;
 
 }

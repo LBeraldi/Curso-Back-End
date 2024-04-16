@@ -6,8 +6,8 @@ public class Cliente {
     private String cpf;
     private int idade;
 
-    Cliente(String cpf){
-        this.cpf = cpf;
+    Cliente(String nome){
+        this.nome = nome;
     }
 
     public void mudaCPF(String cpf) {

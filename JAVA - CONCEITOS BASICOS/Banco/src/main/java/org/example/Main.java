@@ -2,9 +2,29 @@ package org.example;
 
 public class Main {
    public static void main(String[] args) {
-       Conta minhaConta = new Conta();
+       ControleBonificacao controle = new ControleBonificacao();
+
+       Gerente funcionario1 = new Gerente();
+       funcionario1.setSalario(1000);
+       controle.registra(funcionario1);
+
+       Funcionario funcionario2 = new Funcionario();
+       funcionario2.setSalario(1000);
+       controle.registra(funcionario2);
+
+       System.out.println(controle.getTotalDeBonificacoes());
+
+/*       Conta minhaConta = new Conta();
        minhaConta.depositar(1000);
-       minhaConta.sacar(5000);
+
+       Gerente gerente = new Gerente();
+       gerente.setSenha(1234);
+
+       gerente.autentica(gerente.getSenha());
+
+       gerente.setSalario(5000.0);
+       System.out.println(gerente.getBonificacao());*/
+
 
 //       System.out.println(minhaConta.getSaldo());
 
@@ -70,5 +90,17 @@ public class Main {
             System.out.printf("Não consegui sacar!!");
         }*/
 
+    }
+}
+
+class ControleBonificacao{
+    private double totalDeBonificacoes = 0;
+
+    public void registra(Funcionario funcionario){
+        this.totalDeBonificacoes += funcionario.getBonificacao();
+    }
+
+    public double getTotalDeBonificacoes(){
+        return this.totalDeBonificacoes;
     }
 }

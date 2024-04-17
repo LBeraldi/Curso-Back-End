@@ -1,7 +1,7 @@
 package org.example;
 
-public class Diretor extends Funcionario{
-    protected int senha;
+public class Diretor extends Funcionario implements Autenticavel {
+    protected int senha = 321;
     public boolean autentica(int senha){
         if (this.senha == senha){
             System.out.println("Acesso permitido!");

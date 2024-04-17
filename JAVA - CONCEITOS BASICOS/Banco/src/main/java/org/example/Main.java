@@ -2,17 +2,12 @@ package org.example;
 
 public class Main {
    public static void main(String[] args) {
-       ControleBonificacao controle = new ControleBonificacao();
+       Gerente gerente = new Gerente();
+       gerente.autentica(123);
 
-       Gerente funcionario1 = new Gerente();
-       funcionario1.setSalario(1000);
-       controle.registra(funcionario1);
+       gerente.setSalario(2000);
 
-       Funcionario funcionario2 = new Funcionario();
-       funcionario2.setSalario(1000);
-       controle.registra(funcionario2);
-
-       System.out.println(controle.getTotalDeBonificacoes());
+       System.out.println(gerente.getSalario() );
 
 /*       Conta minhaConta = new Conta();
        minhaConta.depositar(1000);

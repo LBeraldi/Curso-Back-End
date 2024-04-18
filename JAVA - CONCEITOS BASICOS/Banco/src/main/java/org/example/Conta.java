@@ -23,7 +23,11 @@ package org.example;
          return this.saldo;
      }
 
-     public abstract void getTipo(String tipo);
+     public abstract String getTipo();
+
+     public void setTipo(String tipo) {
+         this.tipo = tipo;
+     }
 
      public String getTitular() {
          return titular;
@@ -39,10 +43,10 @@ package org.example;
 
      boolean sacar(double valor){
         if (this.saldo < valor){
-            System.out.println("Não é possível sacar um valor maior do que o saldo!");
-            return false;
+            throw new IllegalArgumentException("Saldo insuficiente!");
         }else{
             this.saldo -= valor;
+            System.out.println("Conseguiu sacar! ");
             return true;
         }
     }
@@ -65,10 +69,10 @@ package org.example;
         return saldo;
     }
 
-    public double recuperaDadosParaImpressao() {
+    public void recuperaDadosParaImpressao() {
+        System.out.println("Esta é uma: " + getTipo());
         System.out.println("Saldo de : " + saldo);
         System.out.println("Rendimento de : " + calculaRendimento());
         System.out.println(titular);
-        return saldo;
     }
 }

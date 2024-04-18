@@ -12,6 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Banco" target="21" />
+      <module name="Execoes" target="21" />
       <module name="Primeiro" target="22" />
     </bytecodeTargetLevel>
   </component>

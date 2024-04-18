@@ -1,10 +1,10 @@
 package org.example;
 
-public class ContaPoupanca extends Conta{
+public class ContaCorrente extends Conta{
 
 
     @Override
     public String getTipo() {
-        return "Conta poupanca";
+        return "Conta Poupanca";
     }
 }

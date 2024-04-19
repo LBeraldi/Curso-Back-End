@@ -5,6 +5,6 @@ public class ContaCorrente extends Conta{
 
     @Override
     public String getTipo() {
-        return "Conta Poupanca";
+        return "Conta corrente";
     }
 }

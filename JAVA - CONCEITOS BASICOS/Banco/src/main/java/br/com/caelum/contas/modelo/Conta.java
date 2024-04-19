@@ -1,12 +1,16 @@
 package br.com.caelum.contas;
 
+import lombok.Data;
+
+@Data
 abstract class Conta {
-    int numero;
-    private double saldo;
-    protected String tipo;
-    private double limite;
-    private String titular;
+    private int numero;
     private static int totalDeContas;
+    protected double saldo;
+    private double limite;
+    protected String tipo;
+    private String titular;
+    private String agencia;
 
     Conta(String titular) {
         this.titular = titular;
@@ -19,6 +23,22 @@ abstract class Conta {
 
     Conta() {
         Conta.totalDeContas = Conta.totalDeContas + 1;
+    }
+
+    /*public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public String getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia(String agencia) {
+        this.agencia = agencia;
     }
 
     public double getSaldo() {
@@ -35,13 +55,16 @@ abstract class Conta {
         return titular;
     }
 
-    public static int getTotalDeContas() {
-        return totalDeContas;
-    }
-
     public void setTitular(String titular) {
         this.titular = titular;
     }
+
+    public static int getTotalDeContas() {
+        return totalDeContas;
+    }*/
+
+    public abstract String getTipo();
+
 
     boolean sacar(double valor) {
         if (this.saldo < valor) {
@@ -52,6 +75,17 @@ abstract class Conta {
             return true;
         }
     }
+
+   /* public boolean equals(Object obj){
+        if(obj == null){
+          return false;
+        }
+        Conta outraConta = (Conta) obj;
+        if (this.numero == outraConta.numero && this.agencia.equals(outraConta.agencia)){
+            return true;
+        }
+        return false;
+    }*/
 
     void depositar(double valor) {
         this.saldo += valor;

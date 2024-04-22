@@ -7,7 +7,7 @@ import br.com.caelum.javafx.api.main.SistemaBancario;
 
 public class Main {
     public static void main(String[] args) throws SaldoInsuficienteExeption {
-        SistemaBancario.mostraTela(false);
+        SistemaBancario.mostraTela(true);
 
 /*
         ContaCorrente[] minhasCc;

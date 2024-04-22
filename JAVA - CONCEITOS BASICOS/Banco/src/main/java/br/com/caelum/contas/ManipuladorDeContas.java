@@ -1,4 +1,5 @@
 package br.com.caelum.contas;
+
 import br.com.caelum.contas.modelo.Conta;
 import br.com.caelum.contas.modelo.ContaCorrente;
 import br.com.caelum.contas.modelo.ContaPoupanca;
@@ -6,15 +7,15 @@ import br.com.caelum.javafx.api.util.Evento;
 import lombok.Data;
 
 @Data
-public class ManipuladorDeContas extends Object{
+public class ManipuladorDeContas extends Object {
     private Conta conta;
 
-    public void criaConta(Evento evento){
+    public void criaConta(Evento evento) {
         String tipo = evento.getSelecionadoNoRadio("tipo");
 
-        if(tipo.equals("Conta Corrente")){
+        if (tipo.equals("Conta Corrente")) {
             this.conta = new ContaCorrente();
-        }else if(tipo.equals("Conta Poupança")){
+        } else if (tipo.equals("Conta Poupança")) {
             this.conta = new ContaPoupanca();
         }
 
@@ -24,7 +25,7 @@ public class ManipuladorDeContas extends Object{
 
     }
 
-    public void deposita(Evento evento){
+    public void deposita(Evento evento) {
         double valorDigitado = evento.getDouble("valorOperacao");
         this.conta.deposita(valorDigitado);
     }
@@ -32,14 +33,14 @@ public class ManipuladorDeContas extends Object{
     public void saca(Evento evento) throws SaldoInsuficienteExeption {
         double valor = evento.getDouble("valorOperacao");
         if (this.conta.getTipo().equalsIgnoreCase("Conta Corrente")) {
-            valor += 0.10 ;
+            valor += 0.10;
             this.conta.saca(valor);
-        }else{
+        } else {
             this.conta.saca(valor);
         }
     }
 
-    public void transfere (Evento evento) throws SaldoInsuficienteExeption {
+    public void transfere(Evento evento) throws SaldoInsuficienteExeption {
         Conta destino = (Conta) evento.getSelecionadoNoCombo("destino");
         this.conta.transfere(destino, evento.getDouble("valorTransferencia"));
 

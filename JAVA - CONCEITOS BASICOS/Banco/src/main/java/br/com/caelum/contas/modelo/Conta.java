@@ -28,10 +28,12 @@ public abstract class Conta {
 
     public abstract String getTipo();
 
-    public boolean saca(double valor) throws SaldoInsuficienteExeption{
+    public boolean saca(double valor) throws SaldoInsuficienteExeption, IllegalArgumentException {
         if (this.saldo < valor)  {
-            throw new SaldoInsuficienteExeption("Saldo insuficiente!" + " Tente um valor menor!");
-        } else {
+            throw new SaldoInsuficienteExeption(valor);
+        } if (valor < 0){
+            throw new IllegalArgumentException("O valor de saque deve ser positivo!");
+        }else {
             this.saldo -= valor;
             System.out.println("Conseguiu sacar!");
             return true;
@@ -50,9 +52,12 @@ public abstract class Conta {
     }*/
 
     public void deposita(double valor) {
-        this.saldo += valor;
+        if(valor < 0){
+            throw new IllegalArgumentException("Deposite um valor positivo!");
+        }else{
+            this.saldo += valor;
+        }
     }
-
 
     double calculaRendimento() {
         this.saldo = this.saldo * 0.1;

@@ -1,4 +1,4 @@
-package br.com.caelum.contas;
+package org.example;
 
 public abstract class Funcionario {
     protected String nome;

@@ -1,11 +1,47 @@
 package br.com.caelum.contas;
 import br.com.caelum.contas.SaldoInsuficienteExeption;
+import br.com.caelum.contas.modelo.ContaCorrente;
+import br.com.caelum.contas.modelo.ContaPoupanca;
+import br.com.caelum.contas.modelo.Conta;
 import br.com.caelum.javafx.api.main.SistemaBancario;
 
 public class Main {
     public static void main(String[] args) throws SaldoInsuficienteExeption {
         SistemaBancario.mostraTela(false);
+
+/*
+        ContaCorrente[] minhasCc;
+        minhasCc = new ContaCorrente[10];
+
+        ContaCorrente contaNova = new ContaCorrente();
+        contaNova.deposita(1000);
+        minhasCc[0] = contaNova;
+
+        // Ou
+
+        minhasCc[1] = new ContaCorrente();
+        minhasCc[1].deposita(3200);
+
+        Conta[] minhasContas = new Conta[10];
+        for(int i = 0; i < minhasContas.length; i++){
+            Conta conta = new ContaCorrente();
+            conta.deposita(100 * i);
+        }
+        minhasContas[0] = new ContaCorrente();
+        minhasContas[1] = new ContaCorrente();
+*/
+
+     /*   Perceba que não estamos criando um objeto do tipo Conta,
+     que é abstrato, mas sim dez espaços os quais guardam referências
+     a qualquer tipo de conta.*/
+
+
+
+
 //        TelaDeContas.main(args);
+
+
+//        Tratamento de erro com tryCatch e Exceptions ! -----------------------
 
        /* Conta cc = new ContaCorrente();
         ContaPoupanca cp = new ContaPoupanca();
@@ -116,7 +152,7 @@ public class Main {
 */
 
 
-
+// Operações básicas com manipulação de objetos --------------------------------
 /*        minhaConta.saldo = 1000;
         boolean consegui = minhaConta.sacar(2004);
         if (consegui){

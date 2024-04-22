@@ -1,4 +1,4 @@
-package br.com.caelum.contas;
+package org.example;
 
 public class Diretor extends Funcionario implements Autenticavel {
     protected int senha = 321;

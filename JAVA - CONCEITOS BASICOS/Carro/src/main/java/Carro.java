@@ -1,3 +1,6 @@
+import lombok.Data;
+
+@Data
 public class Carro {
     String cor;
     String modelo;
@@ -10,18 +13,6 @@ public class Carro {
     void acelera(double valor){
         double velocidadeNova = this.velocidadeAtual + valor;
         this.velocidadeAtual = velocidadeNova;
-    }
-
-    void pegaMarcha(){
-        if (this.velocidadeAtual < 0){
-            return -1;
-        } else if (this.velocidadeAtual >= 0 && this.velocidadeAtual < 40) {
-            return 1;
-        } else if (this.velocidadeAtual >= 40 && this.velocidadeAtual < 80) {
-            return 2;
-        }else{
-            return 3;
-        }
     }
 
 }

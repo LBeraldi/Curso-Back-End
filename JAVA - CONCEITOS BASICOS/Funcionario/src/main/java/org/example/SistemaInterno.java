@@ -1,4 +1,4 @@
-package br.com.caelum.contas;
+package org.example;
 
 public class SistemaInterno {
 

@@ -1,12 +1,13 @@
-package br.com.caelum.contas;
+package br.com.caelum.contas.modelo;
 
+import br.com.caelum.contas.SaldoInsuficienteExeption;
 import lombok.Data;
 
 @Data
-abstract class Conta {
+public abstract class Conta {
     private int numero;
     private static int totalDeContas;
-    protected double saldo;
+    public double saldo;
     private double limite;
     protected String tipo;
     private String titular;
@@ -25,53 +26,14 @@ abstract class Conta {
         Conta.totalDeContas = Conta.totalDeContas + 1;
     }
 
-    /*public int getNumero() {
-        return numero;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-
-    public String getAgencia() {
-        return agencia;
-    }
-
-    public void setAgencia(String agencia) {
-        this.agencia = agencia;
-    }
-
-    public double getSaldo() {
-        return this.saldo;
-    }
-
     public abstract String getTipo();
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public String getTitular() {
-        return titular;
-    }
-
-    public void setTitular(String titular) {
-        this.titular = titular;
-    }
-
-    public static int getTotalDeContas() {
-        return totalDeContas;
-    }*/
-
-    public abstract String getTipo();
-
-
-    boolean sacar(double valor) {
-        if (this.saldo < valor) {
-            throw new SaldoInsuficienteExeption("Saldo insuficiente!" + " Tente um valor menor! ");
+    public boolean saca(double valor) throws SaldoInsuficienteExeption{
+        if (this.saldo < valor)  {
+            throw new SaldoInsuficienteExeption("Saldo insuficiente!" + " Tente um valor menor!");
         } else {
             this.saldo -= valor;
-            System.out.println("Conseguiu sacar! ");
+            System.out.println("Conseguiu sacar!");
             return true;
         }
     }
@@ -87,19 +49,10 @@ abstract class Conta {
         return false;
     }*/
 
-    void depositar(double valor) {
+    public void deposita(double valor) {
         this.saldo += valor;
     }
 
-    boolean transfere(Conta destino, double valor) {
-        boolean retirou = this.sacar(valor);
-        if (retirou == false) {
-            return false;
-        } else {
-            destino.depositar(valor);
-            return true;
-        }
-    }
 
     double calculaRendimento() {
         this.saldo = this.saldo * 0.1;
@@ -111,5 +64,13 @@ abstract class Conta {
         System.out.println("Saldo de : " + saldo);
         System.out.println("Rendimento de : " + calculaRendimento());
         System.out.println(titular);
+    }
+    public void transfere(Conta conta, double valor) {
+        try {
+            this.saca(valor);
+            conta.deposita(valor);
+        } catch (SaldoInsuficienteExeption e) {
+            System.out.println(e);
+        }
     }
 }

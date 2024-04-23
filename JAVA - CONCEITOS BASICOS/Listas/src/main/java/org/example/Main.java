@@ -1,12 +1,34 @@
 package org.example;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+import static java.lang.System.currentTimeMillis;
 
 public class Main {
     public static void main(String[] args) {
-        List<String> lista = new ArrayList<>();
+
+
+        //        System.out.println("----------------------------------------------");
+
+     /*   System.out.println("Iniciando...");
+        Collection<Integer> teste = new HashSet<>();
+        long inicio = currentTimeMillis();
+
+        int total = 30000;
+
+        for(int i = 0; i < total; i++){
+            teste.add(i);
+        }
+
+        for(int i = 0; i < total; i++){
+            teste.contains(i);
+        }
+
+        long fim = currentTimeMillis();
+        long tempo = fim - inicio;
+        System.out.println("Tempo gasto: " + tempo);
+*/
+//        System.out.println("----------------------------------------------");
+
+       /* List<String> lista = new ArrayList<>();
 
         lista.add("Joaquim");
         lista.add("6");
@@ -69,7 +91,7 @@ public class Main {
 
         ContaCorrente cc = new ContaCorrente();
 
-        Collections.sort(contas);
+        Collections.sort(contas);*/
     }
 }
 

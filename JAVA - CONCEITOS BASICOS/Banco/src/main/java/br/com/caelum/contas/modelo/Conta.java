@@ -4,7 +4,7 @@ import br.com.caelum.contas.SaldoInsuficienteExeption;
 import lombok.Data;
 
 @Data
-public abstract class Conta {
+public abstract class Conta implements Comparable<Conta> {
     private int numero;
     private static int totalDeContas;
     public double saldo;
@@ -40,7 +40,7 @@ public abstract class Conta {
         }
     }
 
-   /* public boolean equals(Object obj){
+    public boolean equals(Object obj){
         if(obj == null){
           return false;
         }
@@ -49,7 +49,7 @@ public abstract class Conta {
             return true;
         }
         return false;
-    }*/
+    }
 
     public void deposita(double valor) {
         if(valor < 0){
@@ -70,6 +70,7 @@ public abstract class Conta {
         System.out.println("Rendimento de : " + calculaRendimento());
         System.out.println(titular);
     }
+
     public void transfere(Conta conta, double valor) {
         try {
             this.saca(valor);
@@ -77,5 +78,9 @@ public abstract class Conta {
         } catch (SaldoInsuficienteExeption e) {
             System.out.println(e);
         }
+    }
+
+    public int compareTo(Conta outra){
+        return this.titular.compareTo(outra.titular);
     }
 }

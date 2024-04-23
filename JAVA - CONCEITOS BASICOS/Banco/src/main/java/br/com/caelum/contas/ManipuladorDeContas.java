@@ -5,6 +5,8 @@ import br.com.caelum.contas.modelo.ContaCorrente;
 import br.com.caelum.contas.modelo.ContaPoupanca;
 import br.com.caelum.javafx.api.util.Evento;
 import lombok.Data;
+import java.util.Collections;
+import java.util.List;
 
 @Data
 public class ManipuladorDeContas extends Object {
@@ -43,6 +45,10 @@ public class ManipuladorDeContas extends Object {
     public void transfere(Evento evento) throws SaldoInsuficienteExeption {
         Conta destino = (Conta) evento.getSelecionadoNoCombo("destino");
         this.conta.transfere(destino, evento.getDouble("valorTransferencia"));
+    }
 
+    public void ordenaLista(Evento evento){
+        List<Conta> contas = evento.getLista("destino");
+        Collections.sort(contas);
     }
 }

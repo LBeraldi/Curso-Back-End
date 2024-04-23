@@ -11,6 +11,7 @@
         <module name="Funcionario" />
         <module name="Carro" />
         <module name="Faculdade" />
+        <module name="Listas" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

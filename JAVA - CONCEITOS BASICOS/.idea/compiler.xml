@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Array" />
+        <module name="Conceitos-JavaIo-" />
         <module name="Funcionario" />
         <module name="Carro" />
         <module name="Faculdade" />

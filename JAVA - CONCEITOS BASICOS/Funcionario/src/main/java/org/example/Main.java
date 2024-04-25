@@ -3,21 +3,24 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        String s = "<.>>..>.<..>";
+        String s = ">>>>><><<<<<<<";
         String teste = s.replaceAll("\\.", "");
         System.out.println(s);
         System.out.println("Saida: " + teste);
-
         char[] ms = teste.toCharArray();
+        int c = 0;
+        int pilha = 0;
 
         for(int i = 0 ; i < ms.length; i++){
             System.out.println(ms[i]);
-            int c = 0;
-            if(ms[i] == "<"){
+            if(ms[i] == '<'){
+                pilha++;
+            }else if(pilha > 0 && ms[i] == '>'){
+                pilha--;
                 c++;
             }
-            System.out.println(c);
         }
+        System.out.println(c);
     }
 }
 class ControleBonificacao {

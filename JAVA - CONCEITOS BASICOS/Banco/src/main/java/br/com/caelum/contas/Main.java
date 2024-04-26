@@ -4,27 +4,29 @@ import br.com.caelum.contas.modelo.ContaCorrente;
 import br.com.caelum.contas.modelo.ContaPoupanca;
 import br.com.caelum.contas.modelo.Conta;
 import java.util.*;
-//import br.com.caelum.javafx.api.main.SistemaBancario;
+import br.com.caelum.javafx.api.main.SistemaBancario;
 
 public class Main {
     public static void main(String[] args) throws SaldoInsuficienteExeption {
-//        SistemaBancario.mostraTela(true);
-        Conta c1 = new ContaCorrente();
-        c1.deposita(10000);
+        SistemaBancario.mostraTela(true);
 
-        Conta c2 = new ContaCorrente();
-        c2.deposita(3000);
-
-        // cria o mapa
-        Map mapaDeContas = new HashMap();
-
-        // adiciona duas chaves e seus valores
-        mapaDeContas.put("diretor", c1);
-        mapaDeContas.put("gerente", c2);
-
-        // qual a conta do diretor?
-        Conta contaDoDiretor = (Conta) mapaDeContas.get("gerente");
-        System.out.println(contaDoDiretor.getSaldo());
+//        System.out.println(ManipuladorDeContas.carregaDados());
+//        Conta c1 = new ContaCorrente();
+//        c1.deposita(10000);
+//
+//        Conta c2 = new ContaCorrente();
+//        c2.deposita(3000);
+//
+//        // cria o mapa
+//        Map mapaDeContas = new HashMap();
+//
+//        // adiciona duas chaves e seus valores
+//        mapaDeContas.put("diretor", c1);
+//        mapaDeContas.put("gerente", c2);
+//
+//        // qual a conta do diretor?
+//        Conta contaDoDiretor = (Conta) mapaDeContas.get("gerente");
+//        System.out.println(contaDoDiretor.getSaldo());
 
 
 /*

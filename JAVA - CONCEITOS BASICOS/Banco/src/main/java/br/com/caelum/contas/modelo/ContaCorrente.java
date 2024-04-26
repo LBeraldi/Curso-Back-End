@@ -5,6 +5,14 @@ import org.jetbrains.annotations.NotNull;
 
 public class ContaCorrente extends Conta implements Tributavel{
     private double imposto;
+
+    public ContaCorrente(int numero, String titular, String agencia) {
+        super(numero, titular, agencia);
+        this.imposto = imposto;
+    }
+
+    public ContaCorrente(){};
+
     @Override
     public String getTipo() {
         return "Conta corrente";

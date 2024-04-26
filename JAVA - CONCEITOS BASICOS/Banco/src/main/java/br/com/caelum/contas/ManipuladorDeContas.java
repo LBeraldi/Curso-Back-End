@@ -3,6 +3,7 @@ package br.com.caelum.contas;
 import br.com.caelum.contas.modelo.Conta;
 import br.com.caelum.contas.modelo.ContaCorrente;
 import br.com.caelum.contas.modelo.ContaPoupanca;
+import br.com.caelum.contas.modelo.RepositorioDeContas;
 import br.com.caelum.javafx.api.util.Evento;
 import lombok.Data;
 import java.util.Collections;
@@ -50,5 +51,15 @@ public class ManipuladorDeContas extends Object {
     public void ordenaLista(Evento evento){
         List<Conta> contas = evento.getLista("destino");
         Collections.sort(contas);
+    }
+
+    public void salvaDados(Evento evento){
+        List<Conta> contas  = evento.getLista("listaContas");
+        RepositorioDeContas.salva(contas);
+    }
+
+    public List<Conta> carregaDados(){
+        RepositorioDeContas repositorio = new RepositorioDeContas();
+        return repositorio.carrega();
     }
 }

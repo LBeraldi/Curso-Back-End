@@ -5,6 +5,14 @@ import lombok.Data;
 
 @Data
 public class ContaPoupanca extends Conta{
+
+    public ContaPoupanca(int numero, String titular, String agencia) {
+        super(numero, titular, agencia);
+    }
+
+    public ContaPoupanca() {
+    }
+
     @Override
     public String getTipo()  {
         return "Conta poupanca";

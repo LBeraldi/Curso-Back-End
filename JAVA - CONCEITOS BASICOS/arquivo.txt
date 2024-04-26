@@ -1,0 +1,2 @@
+Este é um exemplo de escrita em arquivo usando PrintStream.
+Podemos escrever várias linhas dessa forma.

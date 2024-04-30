@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JAVA - CONCEITOS BASICOS/Banco/Banco.iml" filepath="$PROJECT_DIR$/JAVA - CONCEITOS BASICOS/Banco/Banco.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Curso-Back-End.iml" filepath="$PROJECT_DIR$/.idea/Curso-Back-End.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-Boot/Vendas BD/src/main/main.iml" filepath="$PROJECT_DIR$/Spring-Boot/Vendas BD/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-Boot/Vendas BD/src/test/test.iml" filepath="$PROJECT_DIR$/Spring-Boot/Vendas BD/src/test/test.iml" />
     </modules>
   </component>
 </project>

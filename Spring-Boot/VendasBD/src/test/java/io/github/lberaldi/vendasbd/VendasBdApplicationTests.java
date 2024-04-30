@@ -1,10 +1,10 @@
-package io.github.lberaldi.vendas;
+package io.github.lberaldi.vendasbd;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Teste2ApplicationTests {
+class VendasBdApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Vendas-0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Spring-Boot/Vendas BD/target/Vendas-0.0.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

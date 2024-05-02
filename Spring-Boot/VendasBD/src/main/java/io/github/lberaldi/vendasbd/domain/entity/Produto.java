@@ -1,10 +1,24 @@
 package io.github.lberaldi.vendasbd.domain.entity;
 
-import java.math.BigDecimal;
+import jakarta.persistence.*;
 
+import java.math.BigDecimal;
+import java.util.List;
+import java.util.Set;
+
+@Entity
+@Table(name = "produto")
 public class Produto {
-    private int id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
+    private Integer id;
+
+    @Column(name = "descricao")
     private String descricao;
+
+    @Column(name = "preco_unitario")
     private BigDecimal preco;
 
     public int getId() {

@@ -7,14 +7,14 @@ CREATE TABLE cliente (
 CREATE TABLE produto(
     id INT PRIMARY KEY AUTO_INCREMENT,
     descricao VARCHAR(100),
-    presco_unitario NUMERIC(20,2)
+    preco_unitario NUMERIC(9,2)
 );
 
 CREATE TABLE pedido(
     id INT PRIMARY KEY AUTO_INCREMENT,
     cliente_id  INTEGER REFERENCES cliente(id),
     data_pedido TIMESTAMP,
-    total NUMERIC(20,2)
+    total NUMERIC(9,2)
 );
 
 CREATE TABLE item_pedido(

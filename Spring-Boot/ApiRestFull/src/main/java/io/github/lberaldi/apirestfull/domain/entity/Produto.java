@@ -1,10 +1,7 @@
-package io.github.lberaldi.vendasbd.domain.entity;
-
+package io.github.lberaldi.apirestfull.domain.entity;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
-import java.util.List;
-import java.util.Set;
 
 @Entity
 @Table(name = "produto")
@@ -21,11 +18,11 @@ public class Produto {
     @Column(name = "preco_unitario")
     private BigDecimal preco;
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 

@@ -1,4 +1,4 @@
-package io.github.lberaldi.vendasbd.domain.entity;
+package io.github.lberaldi.apirestfull.domain.entity;
 
 import jakarta.persistence.*;
 
@@ -36,11 +36,11 @@ public class Pedido {
         this.itens = itens;
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 

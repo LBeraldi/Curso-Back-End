@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="VendasBD-0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ApiRestFull/target/VendasBD-0.0.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

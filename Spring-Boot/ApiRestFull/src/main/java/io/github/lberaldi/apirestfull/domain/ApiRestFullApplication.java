@@ -1,14 +1,13 @@
-package io.github.lberaldi.vendasbd;
+package io.github.lberaldi.apirestfull.domain;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class VendasBdApplication {
-
+public class ApiRestFullApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(VendasBdApplication.class, args);
+		SpringApplication.run(ApiRestFullApplication.class, args);
 	}
 
 }

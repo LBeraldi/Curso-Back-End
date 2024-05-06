@@ -1,6 +1,6 @@
-package io.github.lberaldi.vendasbd.domain.repository;
+package io.github.lberaldi.apirestfull.domain.repository;
 
-import io.github.lberaldi.vendasbd.domain.entity.Cliente;
+import io.github.lberaldi.apirestfull.domain.entity.Cliente;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

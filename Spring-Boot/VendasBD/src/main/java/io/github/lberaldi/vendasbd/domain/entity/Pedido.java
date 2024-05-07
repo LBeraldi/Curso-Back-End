@@ -1,5 +1,6 @@
 package io.github.lberaldi.vendasbd.domain.entity;
 
+import io.github.lberaldi.vendasbd.domain.enums.StatusPedido;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -31,7 +32,11 @@ public class Pedido {
     @Column(name = "total")
     private BigDecimal total;
 
-    @OneToMany( mappedBy = "pedido")
+    @Enumerated(EnumType.STRING)
+    @Column(name = "status")
+    private StatusPedido status;
+
+     @OneToMany( mappedBy = "pedido")
     private List<ItemPedido> itens;
 
 

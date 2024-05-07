@@ -3,10 +3,13 @@ package io.github.lberaldi.vendasbd.rest.controler;
 
 import io.github.lberaldi.vendasbd.domain.entity.ItemPedido;
 import io.github.lberaldi.vendasbd.domain.entity.Pedido;
+import io.github.lberaldi.vendasbd.domain.enums.StatusPedido;
+import io.github.lberaldi.vendasbd.rest.dto.AtualizacaoStatusPedidoDTO;
 import io.github.lberaldi.vendasbd.rest.dto.InformacaoItemPedidoDTO;
 import io.github.lberaldi.vendasbd.rest.dto.InformacoesPedidoDTO;
 import io.github.lberaldi.vendasbd.rest.dto.PedidoDTO;
 import io.github.lberaldi.vendasbd.service.PedidoService;
+import jdk.jshell.Snippet;
 import org.springframework.http.HttpStatus;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.*;
@@ -47,9 +50,17 @@ public class PedidoController {
                 .cpf(pedido.getCliente().getCpf())
                 .nomeCliente(pedido.getCliente().getNome())
                 .total(pedido.getTotal())
+                .status(pedido.getStatus().name())
                 .itens(converter(pedido.getItens()))
                 .build();
 
+    }
+
+    @PatchMapping("{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void updateStatus(@PathVariable Integer id, @RequestBody AtualizacaoStatusPedidoDTO dto){
+        String novoStatus = dto.getNovoStatus();
+        service.atualizaStatus(id, StatusPedido.valueOf(novoStatus));
     }
 
     private List<InformacaoItemPedidoDTO> converter(List<ItemPedido> itens){

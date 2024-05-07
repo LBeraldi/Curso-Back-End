@@ -1,9 +1,11 @@
 package io.github.lberaldi.vendasbd.service.impl;
 
+import io.github.lberaldi.vendasbd.exception.PedidoNaoEncontradoException;
 import io.github.lberaldi.vendasbd.domain.entity.Cliente;
 import io.github.lberaldi.vendasbd.domain.entity.ItemPedido;
 import io.github.lberaldi.vendasbd.domain.entity.Pedido;
 import io.github.lberaldi.vendasbd.domain.entity.Produto;
+import io.github.lberaldi.vendasbd.domain.enums.StatusPedido;
 import io.github.lberaldi.vendasbd.domain.repository.Clientes;
 import io.github.lberaldi.vendasbd.domain.repository.ItensPedido;
 import io.github.lberaldi.vendasbd.domain.repository.Pedidos;
@@ -42,6 +44,7 @@ public class PedidoServiceImpl implements PedidoService {
         pedido.setTotal(dto.getTotal());
         pedido.setDataPedido(LocalDate.now());
         pedido.setCliente(cliente);
+        pedido.setStatus(StatusPedido.REALIZADO);
 
         List<ItemPedido> itensPedido = converterItem(pedido, dto.getItens());
         repository.save(pedido);
@@ -53,6 +56,16 @@ public class PedidoServiceImpl implements PedidoService {
     @Override
     public Optional<Pedido> obterPedidoCompleto(Integer id) {
         return repository.findByIdFetchItens(id);
+    }
+
+    @Override
+    @Transactional
+    public void atualizaStatus(Integer id, StatusPedido statusPedido) {
+        repository.findById(id)
+                .map(pedido -> {
+                    pedido.setStatus(statusPedido);
+                    return repository.save(pedido);
+                }).orElseThrow(() -> new PedidoNaoEncontradoException());
     }
 
     private List<ItemPedido> converterItem(Pedido pedido, List<ItemPedidoDTO> itens){

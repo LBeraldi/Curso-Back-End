@@ -1,7 +1,8 @@
 DROP TABLE IF EXISTS minha_tabela;
 CREATE TABLE cliente (
       id INT PRIMARY KEY AUTO_INCREMENT,
-      nome VARCHAR(100)
+      nome VARCHAR(100),
+      cpf varchar(11)
 );
 
 CREATE TABLE produto(
@@ -14,7 +15,8 @@ CREATE TABLE pedido(
     id INT PRIMARY KEY AUTO_INCREMENT,
     cliente_id  INTEGER REFERENCES cliente(id),
     data_pedido TIMESTAMP,
-    total NUMERIC(9,2)
+    total NUMERIC(9,2),
+    status varchar(20)
 );
 
 CREATE TABLE item_pedido(

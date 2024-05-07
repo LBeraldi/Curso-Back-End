@@ -1,6 +1,7 @@
 package io.github.lberaldi.vendasbd.rest.controler;
 
 import io.github.lberaldi.vendasbd.exception.RegraNegocioException;
+import io.github.lberaldi.vendasbd.exception.PedidoNaoEncontradoException;
 import io.github.lberaldi.vendasbd.rest.ApiErrors;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -14,6 +15,12 @@ public class ApplicationControllerAdvice {
     public ApiErrors handleRegraNegocioException(RegraNegocioException ex){
         String mensagemErro = ex.getMessage();
         return new ApiErrors(mensagemErro);
+    }
+
+    @ExceptionHandler(PedidoNaoEncontradoException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ApiErrors handlePedidoNotFoundException(PedidoNaoEncontradoException ex){
+        return new ApiErrors(ex.getMessage());
     }
 
 }

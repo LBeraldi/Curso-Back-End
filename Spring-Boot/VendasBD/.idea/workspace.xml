@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e0aa8f90-f395-4ddc-b856-bee24b4b645a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/src/main/java/io/github/lberaldi/apirestfull/domain/ApiRestFullApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/src/main/java/io/github/lberaldi/apirestfull/domain/entity/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/src/main/java/io/github/lberaldi/apirestfull/domain/entity/ItemPedido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/src/main/java/io/github/lberaldi/apirestfull/domain/entity/Pedido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/src/main/java/io/github/lberaldi/apirestfull/domain/entity/Produto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/src/main/java/io/github/lberaldi/apirestfull/domain/repository/Clientes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/src/main/java/io/github/lberaldi/apirestfull/domain/repository/Clientes01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/src/main/java/io/github/lberaldi/apirestfull/domain/repository/ItensPedido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/src/main/java/io/github/lberaldi/apirestfull/domain/repository/Pedidos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/src/main/java/io/github/lberaldi/apirestfull/domain/repository/Produtos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ApiRestFull/src/test/java/io/github/lberaldi/apirestfull/ApiRestFullApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vendas/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vendas/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vendas/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vendas/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vendas/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vendas/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vendas/src/main/java/io/github/lberaldi/vendasBD/Development.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vendas/src/main/java/io/github/lberaldi/vendasBD/MinhaConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vendas/src/main/java/io/github/lberaldi/vendasBD/VendasApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vendas/src/main/java/io/github/lberaldi/vendasBD/model/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vendas/src/main/java/io/github/lberaldi/vendasBD/repository/MeuRepositorio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vendas/src/main/java/io/github/lberaldi/vendasBD/sercice/MeuServico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vendas/src/main/resources/application-development.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vendas/src/main/resources/application-production.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vendas/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vendas/src/test/java/io/github/lberaldi/vendasBD/Teste2ApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/VendasBdApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/domain/entity/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/domain/entity/ItemPedido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/domain/entity/Pedido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/domain/entity/Produto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/domain/enums/StatusPedido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/domain/repository/Clientes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/domain/repository/Clientes01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/domain/repository/ItensPedido.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/domain/repository/Pedidos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/domain/repository/Produtos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/exception/PedidoNaoEncontradoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/exception/RegraNegocioException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/rest/ApiErrors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/rest/controler/ApplicationControllerAdvice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/rest/controler/ClienteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/rest/controler/PedidoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/rest/controler/ProdutoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/rest/dto/AtualizacaoStatusPedidoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/rest/dto/InformacaoItemPedidoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/rest/dto/InformacoesPedidoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/rest/dto/ItemPedidoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/rest/dto/PedidoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/service/PedidoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/lberaldi/vendasbd/service/impl/PedidoServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/meu_schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/github/lberaldi/vendasbd/VendasBdApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2fmcKVCgnFF96mTkmgDl8fAmFRq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.VendasBdApplication.executor": "Run",
+    "Maven.VendasBD [clean,validate,compile,test...].executor": "Run",
+    "Maven.VendasBD [clean].executor": "Run",
+    "Maven.VendasBD [compile].executor": "Run",
+    "Maven.VendasBD [install].executor": "Run",
+    "Maven.VendasBD [package].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.VendasBdApplication.executor": "Run",
+    "ToolWindowBuild.ShowToolbar": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/lucas.souza/Documentos/Lucas/Curso-Back-End/Spring-Boot/pedidos-api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.1075269",
+    "project.structure.side.proportion": "0.2",
+    "settings.build.tools.auto.reload": "SELECTIVE",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql_aurora_aws",
+      "h2"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="io.github.lberaldi.exception" />
+      <recent name="io.github.lberaldi.vendasbd.domain.enums" />
+      <recent name="io.github.lberaldi.vendasbd.rest.dto" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.VendasBdApplication">
+    <configuration name="VendasBdApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.github.lberaldi.vendasbd.VendasBdApplication" />
+      <module name="VendasBD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.lberaldi.vendasbd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendasBdApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="VendasBD" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.lberaldi.vendasbd.VendasBdApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.github.lberaldi.vendasbd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.VendasBdApplication" />
+        <item itemvalue="Application.VendasBdApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-a39a91d7" />
+        <option value="jdk-22-openjdk-22-4caba194b151-6fbd92ee" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e0aa8f90-f395-4ddc-b856-bee24b4b645a" name="Changes" comment="" />
+      <created>1714409632065</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714409632065</updated>
+      <workItem from="1714409633142" duration="846000" />
+      <workItem from="1714410491470" duration="236000" />
+      <workItem from="1714410739609" duration="13000" />
+      <workItem from="1714410815141" duration="18483000" />
+      <workItem from="1714505692084" duration="614000" />
+      <workItem from="1714651093121" duration="14937000" />
+      <workItem from="1714737523381" duration="41000" />
+      <workItem from="1714738046675" duration="17968000" />
+      <workItem from="1714996652470" duration="27587000" />
+      <workItem from="1715093917033" duration="1748000" />
+      <workItem from="1715095890562" duration="23000" />
+      <workItem from="1715095998838" duration="466000" />
+    </task>
+    <task id="LOCAL-00001" summary="Conexoes com Banco de Dados h2">
+      <option name="closed" value="true" />
+      <created>1714478838052</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714478838052</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Atualizações projeto vendas!!">
+      <option name="closed" value="true" />
+      <created>1714483428340</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714483428340</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Mapeando todas as entidades e criando os repositorios de cada entidade">
+      <option name="closed" value="true" />
+      <created>1714669728072</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714669728072</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Finalizando - Persistencia e acesso de dados com Spring data JPA">
+      <option name="closed" value="true" />
+      <created>1714670851659</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714670851659</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implementando os controles, criando regras de negocios, manipulando os dados de um pedido">
+      <option name="closed" value="true" />
+      <created>1715015483343</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715015483343</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Finalização da API RestFull.">
+      <option name="closed" value="true" />
+      <created>1715086586790</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715086586790</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Conexoes com Banco de Dados h2" />
+    <MESSAGE value="Atualizações projeto vendas!!" />
+    <MESSAGE value="Mapeando todas as entidades e criando os repositorios de cada entidade" />
+    <MESSAGE value="Finalizando - Persistencia e acesso de dados com Spring data JPA" />
+    <MESSAGE value="Implementando os controles, criando regras de negocios, manipulando os dados de um pedido" />
+    <MESSAGE value="Finalização da API RestFull." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalização da API RestFull." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

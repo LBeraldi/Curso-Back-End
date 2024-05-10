@@ -52,6 +52,7 @@ public class ClienteController {
 
     @DeleteMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ApiOperation("Deleta um cliente")
     public void delete( @PathVariable Integer id ){
         clientes.findById(id)
                 .map( cliente -> {
@@ -65,6 +66,7 @@ public class ClienteController {
 
     @PutMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
+    @ApiOperation("Altera os dados de um cliente")
     public void update( @PathVariable Integer id,
                         @RequestBody @Valid Cliente cliente ){
         clientes
@@ -78,6 +80,7 @@ public class ClienteController {
     }
 
     @GetMapping
+    @ApiOperation("Encontra um cliente")
     public List<Cliente> find( Cliente filtro ){
         ExampleMatcher matcher = ExampleMatcher
                                     .matching()

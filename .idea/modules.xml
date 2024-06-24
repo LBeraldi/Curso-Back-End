@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JAVA - CONCEITOS BASICOS/Banco/Banco.iml" filepath="$PROJECT_DIR$/JAVA - CONCEITOS BASICOS/Banco/Banco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA - CONCEITOS BASICOS/Array/Array.iml" filepath="$PROJECT_DIR$/JAVA - CONCEITOS BASICOS/Array/Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA - CONCEITOS BASICOS/Carro/Carro.iml" filepath="$PROJECT_DIR$/JAVA - CONCEITOS BASICOS/Carro/Carro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA - CONCEITOS BASICOS/Conceitos-JavaIo-/Conceitos-JavaIo-.iml" filepath="$PROJECT_DIR$/JAVA - CONCEITOS BASICOS/Conceitos-JavaIo-/Conceitos-JavaIo-.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Curso-Back-End.iml" filepath="$PROJECT_DIR$/.idea/Curso-Back-End.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA - CONCEITOS BASICOS/Faculdade/Faculdade.iml" filepath="$PROJECT_DIR$/JAVA - CONCEITOS BASICOS/Faculdade/Faculdade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA - CONCEITOS BASICOS/Funcionario/Funcionario.iml" filepath="$PROJECT_DIR$/JAVA - CONCEITOS BASICOS/Funcionario/Funcionario.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA - CONCEITOS BASICOS/Listas/Listas.iml" filepath="$PROJECT_DIR$/JAVA - CONCEITOS BASICOS/Listas/Listas.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-Boot/Vendas BD/src/main/main.iml" filepath="$PROJECT_DIR$/Spring-Boot/Vendas BD/src/main/main.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-Boot/Vendas BD/src/test/test.iml" filepath="$PROJECT_DIR$/Spring-Boot/Vendas BD/src/test/test.iml" />
     </modules>

@@ -7,10 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Vendas" />
+        <module name="Diamante" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Vendas" target="21" />
       <module name="Vendas BD" target="21" />
     </bytecodeTargetLevel>
   </component>
